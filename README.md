@@ -1,8 +1,5 @@
-```
-npm install
-npm run dev
-```
+Backend for avin-ai
 
-```
-npm run deploy
-```
+- Workers
+- Bun
+- Hono
