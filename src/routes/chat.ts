@@ -22,8 +22,6 @@ chatRouter.post("/", async (c) => {
     return c.text("Message history is not a valid JSON array.");
   }
 
-  messageHistory = JSON.parse(messageHistory);
-
   // Map each history array to corresponding role and content
   const parsedMessages = messageHistory.map((message, index) => {
     return {
