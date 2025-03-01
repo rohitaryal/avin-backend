@@ -12,6 +12,9 @@
   },
   "vars": {
     "AUTH": "" // PUT AUTH HERE
+  },
+  "ai": {
+    "binding": "ai"
   }
   /**
    * Smart Placement

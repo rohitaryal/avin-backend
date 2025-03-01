@@ -5,13 +5,11 @@ import imageRouter from './routes/image';
 
 const app = new Hono();
 
-app.use(cors());
+app.use('*', cors());
 
-app.get("/", (c) => {
-  return c.text("There's nothing but walls");
-})
+app.get("/", (c) => c.text("There's nothing but walls"));
 
-app.route("/chat/", chatRouter);
-app.route("/image/", imageRouter);
+app.route("/chat", chatRouter);
+app.route("/image", imageRouter);
 
 export default app;
